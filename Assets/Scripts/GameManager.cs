@@ -11,9 +11,10 @@ public class GameManager : MonoBehaviour
     public Dropdown resolutionDropdown;
     Resolution[] resolutions;
     public void Start(){
-        Screen.resolutions;
+        resolutions = Screen.resolutions;
         resolutionDropdown.ClearOptions();
         List<string> options = new List<string>();
+        int currentResolutionIndex = 0;
         for(int i = 0; i < resolutions.Length; i++){
             string option = resolutions[i].width + " x " + resolutions[i].height;
             options.Add(option);
@@ -42,11 +43,11 @@ public class GameManager : MonoBehaviour
         QualitySettings.SetQualityLevel(qualityIndex);
     }
     public void SetFullscreen(bool isFullscreen){
-        Screen.fullscreen = isFullscreen;
+        Screen.fullScreen = isFullscreen;
     }
     public void SetResolution(int resolutionIndex){
         Resolution resolution = resolutions[resolutionIndex];
-        Screen.SetResolution(resolution.width, resolution.height, Screen.fullscreen);
+        Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
     }
     
 }
