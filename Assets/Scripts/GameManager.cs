@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
 {
     public AudioMixer audioMixer;
     public TMPro.TMP_Dropdown resolutionDropdown;
+    public Button mainMenu;
     Resolution[] resolutions;
     public void Start(){
         resolutions = Screen.resolutions;
@@ -30,8 +31,12 @@ public class GameManager : MonoBehaviour
     public void PlayGame(){
         SceneManager.LoadScene(0);
     }
-    public void GameOptions(){
+    public void MainMenu()
+    {
         SceneManager.LoadScene(0);
+    }
+    public void GameOptions(){
+        SceneManager.LoadScene(1);
     }
     public void GameQuit(){
         Application.Quit();
