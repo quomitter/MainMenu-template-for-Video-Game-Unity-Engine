@@ -8,7 +8,7 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     public AudioMixer audioMixer;
-    public Dropdown resolutionDropdown;
+    public TMPro.TMP_Dropdown resolutionDropdown;
     Resolution[] resolutions;
     public void Start(){
         resolutions = Screen.resolutions;

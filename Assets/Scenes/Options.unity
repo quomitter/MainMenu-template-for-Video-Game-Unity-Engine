@@ -149,7 +149,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1483746}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -162,7 +162,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 108, y: 0}
+  m_AnchoredPosition: {x: 107.99988, y: 0}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1483748
@@ -2802,5 +2802,9 @@ PrefabInstance:
       propertyPath: audioMixer
       value: 
       objectReference: {fileID: 24100000, guid: 4a0a4c528fbe697479e2ba6cd078d637, type: 2}
+    - target: {fileID: 6565873640457981451, guid: f7b4f74d1ee767941a48a24c14d01b06, type: 3}
+      propertyPath: resolutionDropdown
+      value: 
+      objectReference: {fileID: 1483748}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f7b4f74d1ee767941a48a24c14d01b06, type: 3}
